@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de um usuário</title>
+</head>
+<body>
+    <p>SISTEMA DE GESTÃO ACADÊMICA</p>
+    <h1>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="Login">Login</label>
+            <input type="text" name="Login" id="Login">
+        </p>
+        <p>
+            <label for="Senha">Senha</label>
+            <input type="password" name="Senha" id="Senha">
+        </p>
+        <p>
+            <label for="Status">Status</label>
+            <select name="Status" id="Status">
+            <option value="Inativo">Inativo</option>
+            <option value="Ativo">Ativo</option>
+            </select>
+        </p>
+        <p>
+            <label for="Tipo">Tipo</label>
+            <input type="radio" name="Tipo" id="Tecnico">
+            <label for="Tecnico">Técnico</label>
+            <input type="radio" name="Tipo" id="Professor">
+            <label for="Professor">Professor</label>
+            <input type="radio" name="Tipo" id="Aluno">
+            <label for="Aluno">Aluno</label>
+        </p>
+        <p>
+            <label for="Data Criação">Data Criação</label>
+            <input type="date" name="Data Criação" id="Data Criação">
+        </p>
+        <p>
+            <label for="Perfil">Perfil</label>
+            <input type="radio" name="Perfil" id="Convidado">
+            <label for="Convidado">Convidado</label>
+            <input type="radio" name="Perfil" id="Administrador">
+            <label for="Administrador">Administrador</label>
+        </p>
+        <p>Observações</p>
+        <p><textarea name="Observações" id="Observações" cols="50" rows="4"></textarea></p>
+        <p>Módulos</p>
+        <p>
+           <input type="checkbox" name="Módulos" id="Compras">
+           <label for="Compras">Compras</label>
+           <input type="checkbox" name="Módulos" id="Biblioteca">
+           <label for="Biblioteca">Biblioteca</label>
+           <input type="checkbox" name="Módulos" id="Acadêmico">
+           <label for="Acadêmico">Acadêmico</label>
+        </p>
+        <p>
+            <input type="checkbox" name="Módulos" id="Documentação">
+            <label for="Documentação">Documentação</label>
+            <input type="checkbox" name="Módulos" id="Recursos Humanos">
+            <label for="Recursos Humanos">Recursos Humanos</label>
+        </p>
+        <p>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Excluir</button>
+        </p>
+
+    </form>
+</body>
+</html>
